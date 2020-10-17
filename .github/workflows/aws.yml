@@ -68,7 +68,7 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: https://github.com/rammady/next-uk-post-codes//task-definition.json
+        task-definition: https://github.com/rammady/next-uk-post-codes/task-definition.json
         container-name: next-uk-post-codes
         image: ${{ steps.build-image.outputs.image }}
 
